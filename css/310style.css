@@ -1,0 +1,19 @@
+@media (max-width: 310px){
+    div.wrapper {width: 300px;}
+    /*Header and Paragraph within Header Element*/
+    div.wrapper > header > h1 {font-size: 20pt; margin-bottom: 15px; padding-left: 10px;}
+    div.wrapper > header > p {font-size: 10pt; padding-left: 10px;}
+    /*Add An Item Header*/
+    div.wrapper .add-item-header {font-size: 15pt;}
+    /*Left Column*/
+    div.wrapper .row .col-sm-4 {width: 100% !important;}
+    div.wrapper .row .left-column .input-item .enter-item, div.wrapper .row .left-column .input-item .column-select, div.wrapper .row .left-column .search-item .search-input{padding: 10px;}
+    div.wrapper .row .left-column .input-item .add-button {margin-top: 0;}
+    div.wrapper .row .left-column .search-item label {font-size: 10pt;}
+    /*Column 1 and 2*/
+    div.wrapper .row .item-columns.column1 {width: 300px !important; height: 223px; left: 13px;position: relative; border-right: 5px solid white;}
+    div.wrapper .row .item-columns.column2 {width: 300px !important; height: 223px; left: 13px;position: relative; border-left: 5px solid white;}
+    div.wrapper .row .item-columns table.table-striped > tbody > tr:nth-child(odd) > td {padding: 10px;}
+    div.wrapper .row .item-columns table.table-striped > tbody > tr:nth-child(even) > td {padding: 10px;}
+    div.wrapper .row .column-header {width: 300px !important;}
+}

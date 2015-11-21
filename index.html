@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="addItemApp">
+<head>
+    <META NAME="description" CONTENT="Enter item you want to add, choose a column and add your item into the list.  Use the X beside the item to delete the item.">
+    <!-- CSS StyleSheets-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/310style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300italic' rel='stylesheet' type='text/css'>
+    <!-- JS Scripts -->
+    <script src="js/angularJS.js"></script>
+    <script src="js/mainJS.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Marvelous!</title>
+</head>
+<body ng-controller="toDoCtrl">
+    <div class="wrapper">
+        <header>
+            <h1>Marvelous!</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+        </header>
+
+        <div class="add-item-header">Add An Item</div>
+
+        <div class="row input-output-panel">
+            <div class="col-xs-6 col-sm-4 left-column">
+                <div class="input-item">
+                    <input type="text" placeholder="ENTER ITEM" ng-model="item.name" class="enter-item">
+
+                    <select class="column-select" ng-model="item.pos" ng-options="option.value as option.name for option in typeOptions">
+                    </select>
+
+                    <button class="add-button" type="button" ng-click="addItem(item)">Add Item</button>
+                </div>
+
+                <div class="search-item">
+                    <label for="search">Search An Item</label>
+                    <div class="search-input">
+                        <input ng-model="query" type="text" placeholder="SEARCH" id="search"><span class="fa fa-search icon-search"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 item-columns column1">
+                <table class="table-striped table-w-override">
+                    <tbody>
+                        <tr>
+                            <th class="column-header">Column 1</th>
+                        </tr>
+                        <tr ng-repeat="item in items | filter:{ pos: 'column1' } | filter:query" ng-class-odd="odd" ng-class-even="even">
+                            <td>{{item.name}}<span ng-click="remove(item)" class="remove-button fa fa-times"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Optional: clear the XS cols if their content doesn't match in height -->
+            <div class="clearfix visible-xs-block"></div>
+
+            <div class="col-xs-6 col-sm-4 item-columns column2">
+                <table class="table-striped table-w-override">
+                    <tbody>
+                    <tr>
+                        <th class="column-header">Column 2</th>
+                    </tr>
+                    <tr ng-repeat="item in items | filter:{ pos: 'column2' } | filter:query" ng-class-odd="odd" ng-class-even="even">
+                        <td>{{item.name}}<span ng-click="remove(item)" class="remove-button fa fa-times"></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

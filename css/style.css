@@ -1,0 +1,68 @@
+/*
+***Gradients are generated using "Ultimate CSS Gradient Generator" at "http://www.colorzilla.com/gradient-editor/"
+ */
+
+body{font-family: 'Helvetica', 'Merriweather';background-color: #79818F;}
+
+div.wrapper {width: 800px; margin: 0 auto;}
+div.wrapper div,
+div.wrapper .row .left-column .input-item .column-select
+{text-transform: uppercase;}
+/*Header and Paragraph within Header Element*/
+div.wrapper > header > h1 {color: white; font-family: 'Merriweather'; font-size: 55pt; margin-bottom: 15px;}
+div.wrapper > header > p {color: #8fffee;font-size: 17pt;margin-bottom: 60px;width: 65%;}
+/*Add An Item Header*/
+div.wrapper .add-item-header {text-align: center; color: white; font-size: 24pt; padding: 5px 0; margin-bottom: 20px;
+    background: #93cede;
+    background: -moz-linear-gradient(top, #BDC6D2 0%, #9AA6B6 41%, #818FA2 100%);
+    background: -webkit-linear-gradient(top, #BDC6D2 0%, #9AA6B6 41%, #818FA2 100%);
+    background: -o-linear-gradient(top, #BDC6D2 0%, #9AA6B6 41%, #818FA2 100%);
+    background: -ms-linear-gradient(top, #BDC6D2 0%, #9AA6B6 41%, #818FA2 100%);
+    background: linear-gradient(to bottom, #BDC6D2 0%, #9AA6B6 41%, #818FA2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BDC6D2', endColorstr='#818FA2', GradientType=1 );
+}
+/*Left Column*/
+div.wrapper .row .left-column .input-item .enter-item,
+div.wrapper .row .left-column .input-item .column-select,
+div.wrapper .row .left-column .search-item .search-input{
+    background-color: #9BA1AB;
+    border: 5px solid white;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+div.wrapper .row .left-column .input-item .add-button{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16pt;
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin-top: 180px;
+    margin-bottom: 40px;
+}
+div.wrapper .row .left-column .search-item label{font-size: 16pt; color: white;}
+div.wrapper .row .left-column .search-item input{background-color: transparent; border: none;width: 90%;}
+div.wrapper .row .left-column .search-item span.icon-search{color:white; font-size: 22px;}
+/*Column 1 and 2*/
+div.wrapper .row .col-sm-4{width: 32.8% !important;}
+div.wrapper .row.input-output-panel{height: 547px;}
+div.wrapper .row table{height: 100%; overflow-y: auto; display: block; text-overflow:ellipsis;}
+div.wrapper .row .item-columns{border: 5px solid white; height: 100%; padding: 0; font-size: 16pt;}
+div.wrapper .row .item-columns table.table-w-override{width: 100%;}
+div.wrapper .row .item-columns.column1{border-right: 2.5px solid white;}
+div.wrapper .row .item-columns.column2{border-left: 2.5px solid white;}
+div.wrapper .row .column-header{width: 265px; color: white; text-align: center; padding: 11px 20px 12px; margin: 0;
+    background: #93cede;
+    background: -moz-linear-gradient(top, #B5C5D8 0%, #8391A5 41%, #4C586D 100%);
+    background: -webkit-linear-gradient(top, #B5C5D8 0%, #8391A5 41%, #4C586D 100%);
+    background: -o-linear-gradient(top, #B5C5D8 0%, #8391A5 41%, #4C586D 100%);
+    background: -ms-linear-gradient(top, #B5C5D8 0%, #8391A5 41%, #4C586D 100%);
+    background: linear-gradient(to bottom, #B5C5D8 0%, #8391A5 41%, #4C586D 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BDC6D2', endColorstr='#818FA2', GradientType=1 );
+}
+div.wrapper .row .item-columns table.table-striped > tbody > tr:nth-child(odd) > td {background-color: #BCC0C7;color: #FFF;}
+div.wrapper .row .item-columns table.table-striped > tbody > tr:nth-child(even) > td {background-color: #F2F3F4;color: #79818F;}
+div.wrapper .row .item-columns table > tbody td {padding: 15px 20px; text-overflow:ellipsis;}
+div.wrapper .row .item-columns table > tbody tr span{float: right; background-color: transparent; border: 1px solid; padding: 5px; border-radius: 5px; cursor:pointer;}
